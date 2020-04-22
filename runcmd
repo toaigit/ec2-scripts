@@ -5,10 +5,14 @@
 RUNDIR=`dirname $0`
 . $RUNDIR/global.env
 
+#. build.txt should contains something like run.ebs, run.eip, run.efs, run.crusers on each separate line
+#  The /tmp/build.txt was created by the userdata.sh in the terraform
 cat /tmp/build.txt | while read task
 do
     $RUNDIR/$task
 done
+
 $RUNDIR/tagRootVol
+
 echo "runcmd completed."
 # task can be run.eip, run.crusers, run.ebs, run.efs

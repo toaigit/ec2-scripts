@@ -6,3 +6,4 @@
       * cd /tmp
       * git clone https://github.com/toaigit/ec2-scripts.git
    * Your userdata should be able to reference these scripts as /tmp/ec2-scripts/scriptName
+*  Look at the ec2-buster for an example of the userdata that will call these commands.

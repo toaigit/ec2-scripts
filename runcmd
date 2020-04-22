@@ -1,6 +1,5 @@
 #!/bin/bash
-#   userdata for tomcat server
-#   Usage $0 VOLID it is passed from the userdata
+# Check out the ec2-buster to see how it called this runcmd command.
 
 RUNDIR=`dirname $0`
 . $RUNDIR/global.env
